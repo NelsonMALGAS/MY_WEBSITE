@@ -1,0 +1,241 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #FFA500, #FFFFFF);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #F5A623;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #F8CA87;
+  border-bottom: 1px solid #F6B456;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 15px;
+  width: 100%;
+  height: 25px;
+  
+}
+
+
+.blank {
+  display: none;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+
+  background-color: #F9D68D;
+  border: 1px solid #F8CA87;
+  border-radius: 5px;
+  max-width: 100%;
+  animation: expandOverlay 0.9s ease-in-out;
+}
+
+@keyframes expandOverlay {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.nav-bar div:hover {
+  text-decoration: underline;
+  color: #F6B456;
+  padding: 10px;
+  transform: scale(1.2);
+  font-size: 18px;
+  font-weight: bold;
+  transform: scale(1.2);
+  border: 1px solid #F6B456;
+}
+
+
+#projects-list:hover{
+  text-decoration: underline;
+  color: #F6B456;
+  padding: 10px;
+  transform: scale(1.2);
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #F5A623;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+button {
+  width: 50%;
+  height: 50px;
+  margin-left: 25%;
+  background-color: #F8CA87;
+  color: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.blank-btn{
+  width: 25%;
+  height: 50px;
+  margin-left: 35%;
+  margin-top: 10%;
+  background-color: #F8CA87;
+  color: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F6B456;
+}
+
+.help-btn {
+  width: 25%;
+  height: 50px;
+  margin-left: 75%;
+  background-color: #c0750554;
+  color: green;
+  border: 1px solid black;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+.help-btn :hover{
+  background-color: #F6B456;
+  color: lime;
+}
+
+.projects-display {
+  display: none;
+}
+
+.guide {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #F9D68D;
+  border: 1px solid #F8CA87;
+  border-radius: 5px;
+  max-width: 300px;
+  animation: expandOverlay 0.5s ease-in-out;
+}
+
+@keyframes expandOverlay {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.footer{
+  position: relative;
+  background-color: #F9D68D;
+  border: 1px solid #F8CA87;
+}
+
+
+.icons{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 40%;
+  margin-top: -60px;
+  max-width: 300px;
+  height: 50px;
+  box-shadow: 2px 2px 2px 2px;
+  animation: expandOverlay 0.5s ease-in-out;
+}
+
+
+@keyframes expandOverlay {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.icons:hover{
+  background-color: #c7721d;
+  transform: scale(1.2);
+}
+
+img{
+  width: 25px;
+  height: 25px;
+}
+
+.image img{
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+img:hover{
+  width: 35px;
+  height: 35px;
+}
+.hlp-btn{
+  color: green;
+}
+
+.guide h3 {
+  margin-top: 0;
+}
+
+.guide ul {
+  padding-left: 20px;
+}
+
+.text{
+  color: red;
+}
+
+.instructions{
+  margin-left: 15px;
+}
+
