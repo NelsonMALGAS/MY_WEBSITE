@@ -1,0 +1,191 @@
+html{background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg);
+    background-size: cover;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin:0px;
+    padding:0px;
+    /*Declaration for my html document for background image,max width(for content to fit vi@ x-axis)& max height(y-axis)*/
+}
+
+body{
+    overflow-x: hidden;
+    /*To cancel out access space on the sides of my page*/
+}
+
+header{
+    background-image:  url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    text-align: center;
+    /*My background image and make text to align in the center of the page*/
+}
+
+h1{color:#40e0d0;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*targeting of h1 element for color,font size & font family*/
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #40e0d0;
+    color: #0000ff;
+    border: 2px solid #000000;
+    text-align: center;
+    justify-content: space-between;
+    gap: 2px;
+    top: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: auto 5px;
+    padding-top:0px;
+    font-size: medium;
+    /*Targeting my navbar's display,background color*/
+}
+
+.navbar a{text-align: center;}
+
+/*Targeting of my h2 element's color and font family*/
+h2{color: #ffd700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{color: white;}/*Targeting of my h2 element's color and font family*/
+
+/*Target my links to change color when visited,hovered over and to show that they are active links*/
+a:link{color:#f5deb3;}
+a:visited{color: #20b2aa}
+a:hover{color:#adff2f;}
+a:active{color:#8a2be2;}
+img{border: 3px solid #000000;
+    border-radius: 100%;
+    /*Targeting my image to have solid border of 3px and to be round*/
+}
+
+.Edu-work{/*align my text to center*/
+    text-align: center;
+}
+
+.icons{text-align:end;}
+
+li{color: white;
+    /*My list's text to be white */
+}
+
+img:hover{transform: translateY(-10px);}/*For my image to move 10px upwards when hovered upon*/
+
+          /*My grid*/
+.navbar:hover{
+    box-shadow: #adff2f;
+    background-color:#0000ff;
+    transform: scaleY(50px);
+}
+
+.navbar h2{
+    color: #ff0000;
+    font-size: larger;
+}
+
+header h1{font-size: xx-large;
+    font-weight: bolder;}
+
+.Wrapper{
+    display: grid;
+    max-height: fit-content;
+    grid-template-areas: 
+    "one two two"
+    "one two two"
+    "one three three"
+    /*(PARENT)The area of my layout and how it should look + the content should fit to max-height of the device*/
+}
+
+footer{color: #ffffff;}/*Color for my footer*/
+
+/*My button styling*/
+button{
+    color: #00ff00;
+    box-shadow:#000000;
+    background-color: #ffffff;
+    border: 3px solid purple;
+    height: auto;   
+}
+
+.one{
+    display: grid;
+    grid-area: one;
+    border: 5px solid #0000ff;
+    box-sizing: content-box;
+    border-spacing: 0cap;
+    text-align: center;
+    /*Wrapper item called one*/
+}
+
+.two{
+    display: grid;
+    grid-area: two;
+    border: 5px solid #0000ff;
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    /*Wrapper item called two*/
+}
+
+.two li{text-align: center;}/*For my list items to align in the center*/
+
+.three{
+    display: flex;
+    flex-direction: column;
+    text-overflow: clip;
+    text-align: center;
+    border: 10px solid #0000ff;
+    box-sizing: content-box;
+    margin:auto
+    /*Wrapper item called three*/
+}
+
+.four{text-align: center;
+    border: 10px solid #0000ff;
+    box-sizing: content-box;
+    /*Wrapper item called four*/
+}
+
+/*Styling of my submit & reset buttons*/
+#submit{min-width: 50px;}
+#reset{min-width: 50px;}
+
+
+           /*My media queries*/
+@media screen and (max-width:425px){
+    body{
+        display:inline-block;
+        flex-direction: column;
+        flex-shrink: 1;
+        font-size: small;
+        /*Targetting the small devices(mobile devices) body and h1*/    
+    }
+    h1{font-family: sans-serif;
+        font-size: small;
+    }
+} 
+/*Targetting medium devices(tablets)*/
+@media screen and(max-width:1024px){
+    body{
+        font-size: medium;
+        display: inline-block;
+        flex-shrink: 1;
+    }
+}
+/*Targetting large devices(laptops & Desktops)*/
+@media screen and(max-width=1198px){
+    body{
+        display: grid;
+        font-size: large;
+        flex-shrink: 0;
+    }
+}
+
+  
+
+
+
+    

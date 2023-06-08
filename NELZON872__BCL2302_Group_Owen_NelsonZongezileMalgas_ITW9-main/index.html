@@ -1,0 +1,220 @@
+<!DOCTYPE html><!--Declaration of my document type-->
+<html lang="en"><!--Declaration of the language which is English-->
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0"><!--Declaration for my viewport to fit to the device-width-->
+        <meta charset="UTF-8"><!--Declaration for my document to use the UTF-8 charecter set-->
+        <link rel="stylesheet" href="CSS/style.css"><!--Linking my css file to my html document-->
+        <title>DIGITAL RESUME</title><!--Title of my page-->
+    </head>
+    <body>
+     <header><!--The header of my page that includes my name,images and introductory statement-->
+    <picture id="image"><!--ID attribute for my pictures-->
+        <source srcset=".\Images\WhatsApp-Image-small.png" media="(max-width:425px)">
+        <source srcset=".\Images\WhatsApp-Image-medium.png" media="(max-width:768px)">
+        <img src="Images/WhatsApp-Image-large.png" alt="Nelson's Photo" width="25%" height="25%">
+    </picture>
+       <h1>NELSON ZONGEZILE MALGAS</h1><!--My name & Surname-->
+        <h1>SOFTWARE ENGINEERING STUDENT</h1><!--Introductory personal statement-->
+     </header>
+     <nav>
+      <div class="navbar"><!--My navigation bar together with links of my diffrent sections in the page-->
+        <h2>Navbar</h2><!--Inline styling of my navbar-->
+        <br>
+        <!--A list of my links-->
+        <a href="#PERSONAL-INFORMATION">PERSONAL-INFORMATION</a>
+        <a href="#EDUCATIONAL-BACKGROUND">EDUCATIONAL-BACKGROUND</a>
+        <a href="#WORK-EXPERIENCE">WORK-EXPERIENCE</a>
+        <a href="#SKILLS">SKILLS</a>
+        <a href="#REFERENCES">REFERENCES</a>
+      </div>
+     </nav>
+    <section><!--The section of my page-->
+     <div class="Wrapper"><!--Div class called wrapper which is the parent element-->
+     <div class="one"><!--Div class element called one which is the child of the wrapper-->
+        <hr><h1 id="PERSONAL-INFORMATION">PERSONAL-INFORMATION</h1><!--ID attribute for my personal-information which is linked to personal-information-->
+        <!--Personal-Information-->
+        <p>Age : 29</p>
+        <p>Nickname : Zakes</p>
+        <p>Religion : Christian</p>
+        <p>Place of birth : Rustenburg,Chaneng</p>
+        <p>Gender : Male</p>
+        <p>Home language : Xhosa</p>
+        <p>Other languages : Zulu,Tswana & Sotho</p>
+        <br>
+        <h2>CONTACT DETAILS</h2><!--contact details which include my twitter,facebook,GitHub and LinkedIn links + Icons-->
+        <p>Cellphone : 062 750 0236</p>
+        <p>Email Address : zmalgas69@gmail.com</p>
+        <p><a href="https://twitter.com/MalgasZakes1?t=LINT0NfCtgGXUkkGEVQV_g&s=09 "><img src="Icons/twitter (1).png" alt="twitter.png"></a></p>
+        <p><a href="https://www.facebook.com/nelson.zakes.7"><img src="Icons/facebook.png" alt=""></a></p>
+        <p><a href="https://github.com/NelsonMALGAS"><img src="Icons/github.png" alt="GITHUB"></a></p>
+        <p><a href="https://www.linkedin.com/in/zongezile-nelson-malgas-58b194b2/"><img src="Icons/linkedin (2).png" alt=""></a></p>
+        <br>
+    <div class="Edu-work"><!--Div class Edu-work which combines my education-->
+        <h1 id="EDUCATIONAL-BACKGROUND">EDUCATIONAL-BACKGROUND</h1><!--ID attribute for my Educational-background which is linked to my educational-background-->
+        <h2>SECONDARY EDUCATION</h2>
+        <br>
+        <p>High School Attended : <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TKlIKSgoKig3YLRSNagwTE1KSUlLSzUytTA2TDFPsjKoMDMwSzZNTDQ3M0oxM0g0tfASSUpMy89OzUtXyMhMz1AoTs7Iz88BAIDmF_M&q=bafokeng+high+school&rlz=1C1GCEB_enZA1027ZA1027&oq=baf&aqs=chrome.1.69i57j46i39i175i199j46i433i512j0i131i433i512j0i512j69i61l3.2598j0j7&sourceid=chrome&ie=UTF-8">BAFOKENG-HIGH-SCHOOL</a></p>
+        <p>Highest Grade passed: Grade 12</p>
+        <p>Year : 2013</p>
+        <p>Currently studying at <a href="https://www.google.com/search?q=codespace+academy&rlz=1C1GCEB_enZA1027ZA1027&sxsrf=AJOqlzVNR6jk1F1jTLWUvZKvpRGFEnAp-A%3A1678712898771&ei=QiAPZLDgLtSJ8gKE7b7gCA&gs_ssp=eJwFwTEOQEAQBdBoJQo30KjNJrNiHcEl5O_8oRKEAqf3Xll1axcCv_vUWSjF2MoTaBaZhqii6kyjPD3E86KJiEBGnmrb6dcB8wYG-vb-GkkW4w&oq=code&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgoILhDHARCvARAnMgQIIxAnMgcIABBDEJECMgQIABBDMgcIABCxAxBDMhAILhCxAxCDARDHARDRAxBDMgoILhCxAxDUAhBDMgcILhDUAhBDMgcILhDUAhBDMgoILhCxAxDUAhBDOgoIABBHENYEELADOgoILhCvARDHARBDOgUIABCABDoGCAAQFhAeOg0ILhDHARCvARDqAhAnOgcIIxDqAhAnOg0IABCPARDqAhC0AhgBOg0ILhCPARDqAhC0AhgBOgsILhDHARCvARCRAjoICC4QsQMQgwE6CAgAELEDEIMBOgsILhCABBCxAxCDAToLCAAQgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDOgUIABCRAjoKCC4QxwEQrwEQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6CAguEIAEELEDSgQIQRgAUJULWJIlYNE7aAJwAXgEgAGEB4gB3zGSAQkzLTEuMC4zLjWYAQCgAQGwARTIAQXAAQHaAQYIARABGAo&sclient=gws-wiz-serp">CodeSpaceAcademy</a></p>
+        <br>
+        <h1 id="WORK-EXPERIENCE">WORK-EXPERIENCE</h1><!--ID attribute for my work-experience which is linked to my work-experience-->
+        <h2>Job 1</h2><!--Information about Job 1-->
+        <p>Employer : INN Stuff</p>
+        <p>Name of company : Sun City</p>
+        <p>Position : Bartender</p>
+        <h2>Responsibilities</h2><!--List of my responsibilities in job 1-->
+        <ul>
+            <li>Serving customers with food and beverages</li>
+            <li>Stock-taking</li>
+        </ul>
+        <h2>Job 2</h2><!--Information about Job 2-->
+        <p>Employer : Sun International</p>
+        <p>Name of Company : Sun City Casino</p>
+        <p>Position : Casino Dealer</p>
+        <h2>Responsibilities</h2><!--List of my responsibilities in job 2-->
+        <ul>
+            <li>Opening tables and making sure that all the chips(playing tokens) are balancing with previous day's books</li>
+            <li>Attending to customer needs in relation to the table I am in</li>
+            <li>Making sure there is no cheating and that the games in the table are going smoothly</li>
+        </ul>
+        <h2>Job 3</h2><!--Information about Job 3-->
+        <p>Employer : Maseve Platinum Mine</p>
+        <p>Name of Company : Masimong Resource Solutions</p>
+        <p>Position : Weighbridge Operator</p>
+        <h2>Responsibilities</h2><!--List of my responsibilities in job 3-->
+        <ul>
+            <li>Inspect trucks before loading</li>
+            <li>Compile reports on trucks that dispatch daily</li>
+            <li>Collect truck samples on each load</li>
+            <li>Communicate with truck companies in relation to loading</li>
+        </ul>
+    </div>
+        </div>
+     <div class="two"><!--Div class element called two which is the child of the wrapper-->
+        <h1 id="SKILLS">SKILLS</h1><!--ID attribute for my Skills which is linked to my skills section-->
+        <ul><!--List of all my skills-->
+           <p>&#x2022;I can communicate well with others</p>
+           <p>&#x2022;I am an organised person</p>
+           <p>&#x2022;Flexible thinker</p>
+           <p>&#x2022;I am a motivated person</p>
+           <p>&#x2022;Good at teamwork</p>
+           <p>&#x2022;Good at problem solving</p>
+          <p>&#x2022;I adapt very quikly</p>
+        </ul>
+        <h2>Programming languages</h2>
+        <ul><!--List of languages i used-->
+            <p>&#x2022;HTML</p>
+            <p>&#x2022;CSS</p>
+        </ul>
+        <h2>TOOLS</h2>
+      <ul><!--List of tools i used-->
+       <p>&#x2022;Git</p>
+       <p>&#x2022;GitHub</p>
+       <p>&#x2022;Visual Studio Code</p>
+       <p>&#x2022;Freepik</p>
+       <p>&#x2022;Unsplash</p>
+       <p>&#x2022;Pinterest</p>
+      </ul>
+      <h1>CAREER OBJECTIVES</h1>
+      <ul><!--List of my career objectives-->
+       <p>&#x2022;To reach self actualisation within the field of engineering</p>
+        <p>&#x2022;eager to learn</p> 
+        <p>&#x2022;To establish my key strengths</p> 
+        <p>&#x2022;experience and contribute effectively to every company I am employed in</p>
+      </ul>
+        <br>
+        <!--About me paragraph-->
+        <h1>ABOUT ME</h1>
+        <p>I am a software engineer with a strong foundation in HTML and CSS. My passion for coding began when I started building websites using these languages. I have spent countless hours honing my skills and developing my knowledge of web design.
+            I am a quick learner and am always eager to expand my knowledge and expertise. I am excited about the opportunity to work with other engineers and learn from their experience. I am confident that I can contribute to any team and help to build amazing products.
+            Thank you for taking the time to read about me. For more information you can contact me on my email address or in the "contact me" section</p>
+     </div>
+     <div class="icons">
+        <h2>CONTACT DETAILS</h2><!--contact details which include my twitter,facebook,GitHub and LinkedIn links + icons-->
+        <p>Cellphone : 062 750 0236</p>
+        <p>Email Address : zmalgas69@gmail.com</p>
+        <p><a href="https://twitter.com/MalgasZakes1?t=LINT0NfCtgGXUkkGEVQV_g&s=09 "><img src="Icons/twitter (1).png" alt="twitter.png"></a></p>
+        <p><a href="https://www.facebook.com/nelson.zakes.7"><img src="Icons/facebook.png" alt="facebook.png"></a></p>
+        <p><a href="https://github.com/NelsonMALGAS"><img src="Icons/github.png" alt="GITHUB.png"></a></p>
+        <p><a href="https://www.linkedin.com/in/zongezile-nelson-malgas-58b194b2/"><img src="Icons/linkedin (2).png" alt="LinkedIn.png"></a></p>
+     </div>
+    </section>
+    </div>
+<aside>
+    <div class="three"><!--Div class element called three which is the child of the wrapper-->
+        <h1 id="REFERENCES">REFERENCES</h1>
+        <!--Different references with contact person's and their contact details for job 1,2 & 3-->
+        <p>Company : INN Stuff</p>
+        <p>Contact Person : Mr Mabuza</p>
+        <p>Position : Manager</p>
+        <p>Contact Details : 014 557 1211 / 083 295 5280</p>
+        <br><hr>
+        <p>Company : Sun International</p>
+        <p>Contact Person : Mrs Dinah</p>
+        <p>Position : Pitboss</p>
+        <p>Contact Details :014 557 1123 </p>
+        <br><hr>
+        <p>Company : Masimong Resource Solutions</p>
+        <p>Contact Person : Kayline Smith</p>
+        <p>Position : HOD</p>
+        <p>Contact Details :012 686 9456 / 082 963 1314 </p>
+        <p>Fax : 012 665 4394</p>
+    </div>
+</aside>
+     </div>
+     <footer><!--my footer section -->
+        <div class="four"><!--Div class element called four which is the child of the wrapper-->
+            <!--MY FORM-->
+            <h1>CONTACT ME</h1>
+            <form action="https://formsubmit.co/zmalgas69@gmail.com" method="POST"><!--Form action Declaration with method set to post-->
+             <div>
+                <label for="Full-Name">Full name(s):</label>
+                <input type="text" id="FirstName" name="FirstName"required><!--The label for full name & surname + their inputs-->
+                <label for="Surname">Surname:</label>
+                <input type="text" id="Surname" name="Surname"required>
+             </div>
+             <br>
+             <div>
+                <label for="mail">Email Address:</label>
+                <input type="mail" id="mail" name="mail"required><!--The label for my email address & Cellphone number +  their inputs-->
+                <label for="tel">Cellphone number:</label>
+                <input type="tel" id="tel" name="tel"required>
+                <div>
+                <br>
+                </div>
+                <!--My dropdown for country of birth together with different countries as options to choose from-->
+                <select name="Country of birth" id="Country" required>
+                  <option value="South Africa">South Africa</option>
+                  <option value="India">India</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="USA">USA</option>
+                  <option value="Other">Other</option>
+                </select>
+                 </div>
+                 <br>
+                 <div>
+                    <!--My Title section with radion button options to choose from-->
+                    <label for="Title">Title:</label required>
+                    <label for="Mr">Mr</label>
+                    <input type="radio" name="Title" value="Mr">
+                    <label for="Mrs">Mrs</label>
+                    <input type="radio" name="Title" value="Mrs">
+                    <label for="phD">phD</label>
+                    <input type="radio" name="Title" value="phD">
+                </div>
+                <br>
+                <!--Text area where a user can leave a message with max columns and rows-->
+                <label for="Comments">Comments</label>
+               <textarea name="message" id="text" cols="30" rows="10"></textarea>
+               <br>
+               <input class="Submit" type="submit" value="Submit">
+               <input class="Reset" type="reset" value="Reset">
+            </div>
+            </form>
+            <button onclick="GotoTop"><a href="#image">Go-to-Top</a></button>
+        </div>
+     </footer>
+    </body>
+</html>

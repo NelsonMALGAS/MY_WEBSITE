@@ -1,3 +1,18 @@
+:root {
+  --color-blue: 0, 150, 255;
+  --color-force-dark: 10, 10, 20;
+  --color-force-light: 255, 255, 255;
+  --color-dark: 10, 10, 20;
+  --color-light: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-dark:  255, 255, 255; 
+    --color-light: 10, 10, 20;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -35,13 +50,15 @@ nav ul {
   display: none;
   position: relative;
   top: 10px;
-  right: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 10px;
-
   background-color: #F9D68D;
   border: 1px solid #F8CA87;
   border-radius: 5px;
   max-width: 100%;
+  max-height: 700px;
   animation: expandOverlay 0.9s ease-in-out;
 }
 
@@ -114,7 +131,7 @@ button {
   width: 25%;
   height: 50px;
   margin-left: 35%;
-  margin-top: 10%;
+  margin-top: 3%;
   background-color: #F8CA87;
   color: #fff;
   border: 1px solid black;
@@ -141,14 +158,31 @@ button:hover {
   color: lime;
 }
 
+.header-button{
+  position: static;
+  width: 75px; 
+  margin-left: 30px;
+  border: none;
+  align-self: center;
+  
+}
+
 .projects-display {
   display: none;
+}
+
+.theme{
+  display: none;
+  align-self: flex-end;
+  color: black;
+  box-sizing: border-box;
+  box-shadow: #fff;
 }
 
 .guide {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 150px;
   right: 10px;
   padding: 10px;
   background-color: #F9D68D;
@@ -171,6 +205,8 @@ button:hover {
   position: relative;
   background-color: #F9D68D;
   border: 1px solid #F8CA87;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 
@@ -208,7 +244,6 @@ img{
 }
 
 .image img{
-    align-items: center;
     width: 200px;
     height: 200px;
     border: 1px solid black;
@@ -221,6 +256,7 @@ img:hover{
 }
 .hlp-btn{
   color: green;
+  font-size: x-large;
 }
 
 .guide h3 {
@@ -232,10 +268,34 @@ img:hover{
 }
 
 .text{
-  color: red;
+  color: rgb(90, 81, 81);
+  margin-top: 25px;
 }
 
 .instructions{
   margin-left: 15px;
+}
+
+@media (max-width : 396px){
+  header {
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    font-size: small;
+  }
+  .nav-bar {
+    display: grid;
+    justify-content: space-around;
+    margin-right: 15px;
+    width: 100%;
+    height: 25px;
+    
+  }
+  .image img{
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
 }
 

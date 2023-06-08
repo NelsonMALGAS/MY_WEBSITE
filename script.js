@@ -1,5 +1,6 @@
 // script.js
 
+
 // Get the projects list element
 const projectsList = document.getElementById('projects-list');
 
@@ -10,7 +11,7 @@ projectsList.addEventListener('click', (event) => {
 });
 
 //let aboutMe = document.querySelector('.about-me').innerHTML
-let aboutLink = document.querySelector('.ab')
+let aboutLink = document.querySelector('.abt')
 let section = document.querySelector('.blank')
 
 aboutLink.addEventListener('click' ,() =>{
@@ -25,7 +26,7 @@ closeAboutOverlayBtn.addEventListener('click' ,() =>{
 })
 
 const displayProjects = document.querySelector('.projects-display ')
-const displayLink = document.querySelector('.cd')
+const displayLink = document.querySelector('.prj')
 
 displayLink.addEventListener('click' ,(e)=>{
   e.stopPropagation()
@@ -50,9 +51,12 @@ const helpBtn = document.querySelector('.help-btn');
       guide.style.display = ''
     });
 
+const headerButton = document.querySelector('.header-button')
+const headerThemeOverlay = document.querySelector('.theme')
+
 
   
-    const contacts = document.querySelector('.ef');
+    const contacts = document.querySelector('.cntcs');
     const contactsOverlay = document.querySelector('.icons');
     let text = document.querySelector('.text');
 
