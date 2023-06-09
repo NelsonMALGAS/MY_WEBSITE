@@ -14,14 +14,13 @@ projectsList.addEventListener('click', (event) => {
 let aboutLink = document.querySelector('.abt')
 let section = document.querySelector('.blank')
 
+
 aboutLink.addEventListener('click' ,() =>{
- 
   section.style.display = 'block'
 })
 
 const closeAboutOverlayBtn = document.querySelector('.blank-btn')
 closeAboutOverlayBtn.addEventListener('click' ,() =>{
- 
   section.style.display = ''
 })
 
@@ -78,5 +77,14 @@ const headerThemeOverlay = document.querySelector('.theme')
   text.innerHTML = pieceOfText;
       
     }
+})
+
+const icons = document.querySelector('.icons')
+icons.addEventListener('click' , () =>{
+  
+  contactsOverlay.style.display = ''   
+  const pieceOfText = '<p class="text"></p>';
+  text.innerHTML = pieceOfText;
+
 })
     
