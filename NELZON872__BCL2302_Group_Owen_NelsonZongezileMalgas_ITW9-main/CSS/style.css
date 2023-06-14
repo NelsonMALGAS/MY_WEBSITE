@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.profile,
+.education,
+.work-experience,
+.skills,
+.references {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job {
+  margin-bottom: 15px;
+}
+
+.job h3 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.reference {
+  margin-bottom: 15px;
+}
+
+.reference h3 {
+  margin-top: 0;
+}
+
+.reference p {
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+
+  .section {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjust styles for mobile screens */
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar li {
+    margin-right: 5px;
+  }
+
+  .section {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
