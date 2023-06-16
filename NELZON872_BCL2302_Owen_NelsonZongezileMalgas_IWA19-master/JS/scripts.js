@@ -1,5 +1,10 @@
 
-import { books, authors, genres, BOOKS_PER_PAGE } from './data.js'
+import {
+     books,
+     authors,
+     genres, 
+     BOOKS_PER_PAGE 
+    } from './data.js'
 
 let page = 1;
 let matches = books
@@ -183,7 +188,11 @@ document.querySelector('[data-search-form]').addEventListener('submit', (event) 
 document.querySelector('[data-list-button]').addEventListener('click', () => {
     const fragment = document.createDocumentFragment()
 
-    for (const { author, id, image, title } of matches.slice(page * BOOKS_PER_PAGE, (page + 1) * BOOKS_PER_PAGE)) {
+    const itemsPerPage = BOOKS_PER_PAGE
+    const startIndex = page * itemsPerPage
+    const endIndex = (page + 1) * itemsPerPage
+
+    for (const { author, id, image, title } of matches.slice(startIndex, endIndex)) {
         const element = document.createElement('button')
         element.classList = 'preview'
         element.setAttribute('data-preview', id)
@@ -205,7 +214,14 @@ document.querySelector('[data-list-button]').addEventListener('click', () => {
 
     document.querySelector('[data-list-items]').appendChild(fragment)
     page += 1
+
+    const remainingCount = Math.max(0, matches.length - (page * itemsPerPage))
+    document.querySelector('[data-list-button]').innerHTML = `
+        <span>Show more</span>
+        <span class="list__remaining"> (${remainingCount})</span>
+    `
 })
+
 
 document.querySelector('[data-list-items]').addEventListener('click', (event) => {
     const pathArray = Array.from(event.path || event.composedPath())
